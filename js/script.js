@@ -1,12 +1,12 @@
-function encrypt(text) {
-  const keys = [
-    ["a", "ai"],
-    ["e", "enter"],
-    ["i", "imes"],
-    ["o", "ober"],
-    ["u", "ufat"],
-  ];
+const keys = [
+  ["a", "ai"],
+  ["e", "enter"],
+  ["i", "imes"],
+  ["o", "ober"],
+  ["u", "ufat"],
+];
 
+function encrypt(text, keys) {
   return text
     .split("")
     .map((item) =>
@@ -15,14 +15,7 @@ function encrypt(text) {
     .join("");
 }
 
-function decrypt(textEncrypt) {
-  const keys = [
-    ["a", "ai"],
-    ["e", "enter"],
-    ["i", "imes"],
-    ["o", "ober"],
-    ["u", "ufat"],
-  ];
+function decrypt(textEncrypt, keys) {
   return keys.reduce(
     (prev, act) => prev.replaceAll(act[1], act[0]),
     textEncrypt
@@ -57,7 +50,7 @@ document.querySelector("#crypt").addEventListener("click", (_) => {
     resetResult();
     return;
   }
-  showResult(encrypt(text));
+  showResult(encrypt(text, keys));
 });
 
 document.querySelector("#decrypt").addEventListener("click", (_) => {
@@ -66,8 +59,9 @@ document.querySelector("#decrypt").addEventListener("click", (_) => {
     resetResult();
     return;
   }
-  showResult(decrypt(text));
+  showResult(decrypt(text, keys));
 });
+
 document.querySelector("#copy").addEventListener("click", async (e) => {
   try {
     const text = document.querySelector(
