@@ -30,7 +30,7 @@ O site pode ser acesso através do link:
 2. Os valores encriptados e desencriptados podem ser copiados diretamente para a área de transferência através do botão "copiar".
 3. Foi utilizado CSS para mostrar ou ocultar itens de acordo com o tamanho da página.
 4. O site foi adaptado para ser responsivo em resoluções de largura: 1440px, 768px e 375px.
-5. AA implementação lógica em JavaScript utilizou funcionalidades nativas da linguagem para tornar o código conciso e menos verboso. O código pode ser encontrado [AQUI]("js/script.js") ou em: 'js/script.js'.
+5. AA implementação lógica em JavaScript utilizou funcionalidades nativas da linguagem para tornar o código conciso e menos verboso. O código pode ser encontrado [AQUI](js/script.js) ou em: 'js/script.js'.
 
 
 
