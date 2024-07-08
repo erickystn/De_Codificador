@@ -45,7 +45,7 @@ function resetResult() {
 }
 
 document.querySelector("#crypt").addEventListener("click", (_) => {
-  const text = document.querySelector("#text-input").value;
+  const text = document.querySelector("#text-input").value.trim();
   if (!text) {
     resetResult();
     return;
@@ -54,7 +54,7 @@ document.querySelector("#crypt").addEventListener("click", (_) => {
 });
 
 document.querySelector("#decrypt").addEventListener("click", (_) => {
-  const text = document.querySelector("#text-input").value;
+    const text = document.querySelector("#text-input").value.trim();
   if (!text) {
     resetResult();
     return;
