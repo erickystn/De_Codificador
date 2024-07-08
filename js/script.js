@@ -77,7 +77,7 @@ document.querySelector("#copy").addEventListener("click", async (e) => {
             await navigator.clipboard.writeText(text);
             e.target.value = "Copiado!"
 
-            setTimeout(e => e.target.value = "Copiar", 1000);
+            setTimeout(_ => e.target.value = "Copiar", 1000);
         }
     } catch (ex) {
         console.log("The Clipboard API is not available.", ex);
