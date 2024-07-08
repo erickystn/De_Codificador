@@ -168,6 +168,7 @@ h1 {
 }
 
 footer {
+  text-align: center;
   padding: 32px;
   background-color: #7743db;
   display: flex;
@@ -192,14 +193,15 @@ a {
     padding: 10px;
   }
 
-  .second-section,
-  .first-section {
+  .first-section,
+  .second-section-not-found,
+  .second-section-result{
     width: 100%;
     margin: 20px 0;
     height: 90%;
   }
 
-  .second-section__not-found_img {
+    .second-section-not-found_img {
     display: none;
   }
 }
