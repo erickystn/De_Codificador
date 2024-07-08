@@ -71,13 +71,13 @@ document.querySelector("#decrypt").addEventListener("click", (_) => {
 document.querySelector("#copy").addEventListener("click", async (e) => {
     try {
 
+
         const text = document.querySelector(".second-section-result__text").textContent;
-        console.log(text)
         if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
             await navigator.clipboard.writeText(text);
-            e.target.value = "Copiado!"
+            e.target.innerHTML = "Copiado!"
 
-            // setTimeout(_ => e.target.value = "Copiar", 1000);
+            setTimeout(_ => e.target.innerHTML = "Copiar", 1000);
         }
     } catch (ex) {
         console.log("The Clipboard API is not available.", ex);
