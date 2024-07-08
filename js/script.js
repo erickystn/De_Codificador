@@ -32,7 +32,7 @@ function showResult(text) {
     .classList.remove("invisible");
 
   document.querySelector(".second-section-result__text").innerHTML = text;
-  const position = document.querySelector(".second-section-result__text").getBoundingClientRect();
+  const position = document.querySelector(".second-section-result").getBoundingClientRect();
   window.scrollTo({top: position.y, left: position.x, behavior:"smooth"});
 }
 
