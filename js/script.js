@@ -32,6 +32,8 @@ function showResult(text) {
     .classList.remove("invisible");
 
   document.querySelector(".second-section-result__text").innerHTML = text;
+  const position = document.querySelector(".second-section-result__text").getBoundingClientRect();
+  window.scrollTo({top: position.y, left: position.x, behavior:"smooth"});
 }
 
 function resetResult() {
@@ -58,6 +60,7 @@ document.querySelector("#decrypt").addEventListener("click", (_) => {
   if (!text) {
     resetResult();
     return;
+
   }
   showResult(decrypt(text, keys));
 });
