@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
 
 :root {
-  --primary-color: #0a3871;
-  --secondary-color: #ffffff;
-  --background: #f3f5fc;
+  --primary-color: #7946a5;
+  --secondary-color: #fff;
+  --background: #f1eaff;
 }
 
 .inter-400 {
@@ -50,7 +50,7 @@ h1 {
   font-size: 2.9rem;
   font-weight: 700;
   font-family: "Kode Mono", monospace;
-  letter-spacing: 0.7rem;
+
   color: var(--primary-color);
 }
 
@@ -165,6 +165,25 @@ h1 {
   color: var(--primary-color);
   background-color: var(--secondary-color);
   border: 1px solid var(--primary-color);
+}
+
+footer {
+  padding: 32px;
+  background-color: #7743db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_text,
+a {
+  font-family: "Kode Mono", monospace;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.4rem;
+}
+a {
+  display: inline-block;
 }
 
 @media screen and (max-width: 768px) {
