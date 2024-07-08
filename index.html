@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Decodificador de Texto</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <section class="first-section">
+      <h1>Decodificador</h1>
+      <div class="first-section_container">
+        <div class="first-section__container__section-data">
+          <textarea name="texto" id="text-input" class="inter-400" placeholder="Digite seu texto" oninput="this.value = this.value.replace(/[^a-z ]/g,'')"></textarea>
+          <div class="first-section__container__base">
+            <span class="first-section__container__base__alert inter-400">Apenas letras minúsculas e sem acento.</span>
+            <div class="first-section__container__base__buttons">
+              <button type="button" id="crypt" class="button button-dark inter-400">
+                Criptografar
+              </button>
+              <button type="button" id="decrypt" class="button button-light inter-400">
+                Descriptografar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+      <div class="second-section-not-found">
+        <img class="second-section-not-found_img" src="./assets/notfound.svg" alt="menino ajoelhado com uma lupa na mão olhando um diamante levitando em sua frente" />
+        <h3 class="second-section-not-found__head inter-700">
+          Nenhuma mensagem encontrada
+        </h3>
+        <p class="second-section-not-found__subhead inter-400">
+          Digite um texto que você deseja criptografar ou descriptografar.
+        </p>
+      </div>
+
+
+      <div class="second-section-result  invisible">
+        <div class="second-section-result__text inter-400"></div>
+        <button type="button" id="copy" class="button button-light inter-400">
+          Copiar
+        </button>
+      </div>
+
+
+
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
