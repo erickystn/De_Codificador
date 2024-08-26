@@ -96,6 +96,7 @@ h1 {
 
 .second-section-not-found,
 .second-section-result {
+  max-height: 90vh;
   border-radius: 32px;
   min-width: 320px;
   width: 30%;
@@ -132,6 +133,7 @@ h1 {
 }
 
 .second-section-result__text {
+  overflow: auto;
   font-size: 2.4rem;
   line-height: 3.5rem;
   padding-bottom: 20px;
